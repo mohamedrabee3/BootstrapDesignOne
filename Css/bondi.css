@@ -1,0 +1,193 @@
+:root{
+    --dark-color:#19283F;
+    --green-color:#33D1CC;
+    --red-color:#FF3150;
+    --yellow-color:#FFC400;
+    --section-color:#EFF7FA;
+}
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+body{
+font-family:'Roboto', sans-serif;
+}
+.navbar{
+    background-color:var(--dark-color);
+}
+.navbar .navbar-nav .nav-link {
+    color: white;
+}
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:hover{
+color:var(--green-color);
+}
+.navbar .search{
+    border-left:1px solid var(--green-color);
+}
+.navbar .search svg{
+    color:var(--green-color);
+}
+.navbar .navbar-toggler{
+    color:white;
+    border-color:white;
+    font-size:20px;
+}
+.navbar .navbar-toggler:focus{
+    box-shadow:none;
+}
+.navbar .navbar-toggler[aria-expanded="true"]{
+    border-color:var(--green-color);
+}
+.landing{
+    background-color:var(--dark-color);
+    min-height:calc(100vh - 70px);
+   
+}
+.main-btn{
+    background-color:var(--red-color);
+    color:var(--yellow-color);
+    padding:0.5rem 1rem;
+}
+.main-btn:hover{
+    color:var(--yellow-color);
+    background-color:var(--red-color);
+}
+.main-title::after{
+    content:"";
+    width:120px;
+    height:2px;
+    background-color:var(--green-color);
+    position:absolute;
+    bottom:-20px;
+    left:50%;
+    transform:translateX(-50%);
+}
+.features .icon-holder{
+    height:200px;
+}
+.features .icon-holder svg{
+    left:50%;
+    transform: translateX(-50%);
+}
+.features .icon-holder .number{
+    height:12rem;
+    color:var(--section-color);
+}
+.features .icon-holder .icon{
+    color:var(--green-color);
+    font-size: 4rem;
+}
+.features .feat h4{
+    color:var(--yellow-color);
+}
+/* Start Our Work */
+.our-work{
+    background-color:var(--section-color);
+}
+.our-work ul .active{
+    background-color:var(--red-color);
+    color:var(--yellow-color);
+}
+.our-work ul li{
+    padding:0.5rem 1rem;
+    cursor:pointer;
+}
+.our-work ul li:not(.active):hover{
+    color:var(--red-color);
+}
+.our-work .box{
+    padding:5px;
+    overflow:hidden;
+    position:relative;
+}
+.our-work .box::before{
+    content:attr(data-work);
+    position:absolute;
+    background-color:#33d1ccbd;
+    width:calc(100% - 10px);
+    height:calc(100% - 10px);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-weight:bold;
+    color:white;
+    font-size:1.5rem;
+    transition:0.4s;
+    transform:translateY(calc(-100% - 5px));
+}
+.our-work .box:hover::before{
+    transform:translateY(0);
+}
+
+/* End Our Work */
+/* Start Stuff */
+.stuff .description{
+    max-width:500px;
+}
+/* Start Team */
+.team{
+    background-color:var(--section-color);
+}
+.team .team-title h2{
+    color:var(--yellow-color);
+}
+.team .box h4{
+    background-color:var(--green-color);
+   
+}
+/* End Team */
+/* Start Project */
+.project{
+    background-color:var(--dark-color);
+}
+/* End Project */
+/* Start Subscripe */
+.subscribe{
+background-color:var(--yellow-color);
+}
+.subscribe input[type="email"]{
+    border:none;
+    border-bottom:1px solid white;
+}
+.subscribe input[type="email"]:focus{
+   outline:none;
+}
+.subscribe ::placeholder{
+    color:white;
+}
+.subscribe input[type="submit"]{
+    background-color:var(--dark-color);
+    color:var(--yellow-color);
+    
+}
+
+/* End Subscribe */
+/* Start footer */
+footer{
+    background-color:var(--dark-color);
+}
+footer .info .copyright >span{
+    color:var(--green-color);
+}
+footer .info div span{
+color:var(--yellow-color);
+}
+footer .contact ul svg{
+    width:20px;
+    height:20px;
+}
+footer .facebook{
+    background-color:#1877f2;
+}
+footer .twitter{
+    background-color:#1da1f2;
+}
+footer .linkedin{
+    background-color:#0a66c2;
+}
+footer .youtube{
+    background-color:#ff0000;
+}
